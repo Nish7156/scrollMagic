@@ -73,7 +73,7 @@ function MainAnimation() {
   console.log(videoOpen);
   return (
     <>
-      <div className="container relative mx-auto border-2">
+      <div className="container relative mx-auto ">
         <div className="container mx-[15px] flex items-center py-24 justify-center">
           {videoOpen ? (
             <div id="" className="">
