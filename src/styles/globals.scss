@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./typography.scss";
+@import "./menu.scss";
+@import "./tabs.scss";
+@import "./videosection.scss";
+
+body{
+    @apply font-display;
+}

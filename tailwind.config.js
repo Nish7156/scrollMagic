@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './elements/**/*.{js,ts,jsx,tsx}',
-    './Layout/**/*.{js.ts,jsx,tsx}',
-    './section/**/*.{js.ts,jsx,tsx}',
-    './Layout/*.{js.ts,jsx,tsx}',
+
+    // Or if using `src` directory:
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -14,36 +14,61 @@ module.exports = {
         xs: '.75rem', // 12px
         sm: '.875rem', // 14px
         base: '1rem', // 16px
-        medium: '18px',
-        md: '20px', 
-        lg: '1.3rem', // 24px
-        xl: ['2.5rem', '4rem'], //40
-        xxl: '1.625rem', // 26px
-        '3xl': '2.125rem', // 34px
-        '4xl': '2.25rem', // 36px
-        '5xl': '3rem', // 48px
-        '6xl': ['4.4rem', '78px'], //82px
+        md:'1.25rem', // 20px
+        lg:"1.375rem",// 22px
+        xl:'2rem', //32px
+        xxl:'2.5rem', //40px
+        xxl:'6.875rem', //110px
       },
-
+      fontFamily: {
+        body: ['Overpass'],
+        display: ['Overpass'],
+      },
       colors: {
-        primary: {
-          DEFAULT: '#00b4d8',
-        },
-        secondary: {
-          DEFAULT: '#222020',
-        },
+        primary: '#00B2ED',
         black: {
           DEFAULT: '#000000',
+          100:'#001515',
         },
-        white: {
-          DEFAULT: '#ffffff',
+        gray:{
+          DEFAULT:"#FCFBF9",
         },
-        gray: {
-          DEFAULT: '#E6E6E6',
+        skyBlue:{
+          DEFAULT:'#00B2ED',
         },
       },
     },
   },
+  plugins: [
+    function({addComponents}) {
+      addComponents ({
+        '.container': {
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
 
-  plugins: [],
-}
+          '@screen sm': {
+            maxWidth: '100%',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          },
+          '@screen md': {
+            maxWidth: '100%',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          },
+          '@screen lg': {
+            maxWidth: '1120px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          },
+          '@screen xl': {
+            maxWidth: '1120px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          },
+        },
+        })
+      }
+  ],
+};
