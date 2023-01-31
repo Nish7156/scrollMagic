@@ -1,6 +1,8 @@
 // @ts-ignore *//
 import React,{useEffect, useState} from 'react'
 import gsap from 'gsap'
+import Head from 'next/head';
+import Script from 'next/script';
 
 function HeroSection() {
 
@@ -48,6 +50,9 @@ function HeroSection() {
     
   return (
     <>
+    <Head>
+      <Script src='./ScrollTrigger.js'/>
+    </Head>
     <div className='container overflow-auto border-2'>
        <svg id='svg' xmlns="http://www.w3.org/2000/svg" className='w-full' height="741.471" viewBox="0 0 1165.529 741.471">
   <path id="Path_7" className='Path_1' data-name="Path 7" d="M879.309,534.177c-.953-1.964-.156-9.2-3.666-7.177q-7.659,7.432-15.261,14.922c-3.084,3.712,13.163,6.268,15.737,8.261,9.454,4.741,5.624-1.905,4.768-7.939,17.069-8.188,31.479-24.525,33.711-44.332,6.752-39.722-35.505-74.591-72.885-57.9-25.228,10.091-39.279,40.061-31.759,66.022,2.3,5.848,9.261,1.313,6.635-3.858a48.261,48.261,0,0,1,5.268-35.2c15.474-29.284,60.543-31.415,78.029-2.992C916.171,487.469,905.89,523.344,879.309,534.177Z" transform="translate(-537.686 -435.735)" fill="#00b2ed"/>
