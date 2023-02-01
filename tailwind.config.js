@@ -11,8 +11,14 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        xs: '.75rem',
-        lg:"22px",
+        xs: '.75rem', // 12px
+        sm: '.875rem', // 14px
+        base: '1rem', // 16px
+        md:'1.25rem', // 20px
+        lg:"1.375rem",// 22px
+        xl:'2rem', //32px
+        xxl:'2.5rem', //40px
+        xxl:'6.875rem', //110px
       },
       fontFamily: {
         body: ['Overpass'],

@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import Layout from '@/layout/Layout'
-import Tabs from '@/components/Tabs'
-import VideoSction from '@/components/Home/VideoSction'
-import Anime from '@/components/Home/Anime'
-import MainScroll from '@/components/Home/MainScroll'
+import Kofukons from '@/components/Home/Kofukons'
+import Who from "@/components/Home/Who"
+import Sunrise from '@/components/Home/Sunrise'
+import VideoSction from '@/components/Home/VideoSction';
+import HeroSection from '@/components/Home/HeroSection'
 export default function Home() {
  
   return (
     <Layout>
-      {/* <VideoSction/> */}
-      {/* <div>
-      <Tabs />
-      </div> */}
-      <MainScroll/>
-      {/* <Anime/> */}
+      <HeroSection/>
+      <VideoSction/>
+      {/* <Who />
+      <Sunrise />
+      <Kofukons /> */}
   
     </Layout>
   
