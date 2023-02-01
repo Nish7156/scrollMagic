@@ -31,7 +31,7 @@ function HeroSection() {
       
       console.log(draw,"Draw");
 
-      
+// dfe
       setfirst(draw);
 
       // Reverse the drawing when scroll upwards
