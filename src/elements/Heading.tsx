@@ -4,13 +4,13 @@ const Heading = ({ priority, children }: any) => {
   const DynamicTag: any = `h${priority}`;
   return (
     <DynamicTag
-      className={` font-black ${
+      className={` font-display font-bold ${
         priority == 1
-          ? "text-xxl"
+          ? "text-6xl"
           : priority == 2
-          ? "text-xxl "
+          ? "lg:text-5xl text-4xl "
           : priority == 3
-          ? "lg:xl "
+          ? "lg:text-3xl text-2xl "
           : priority == 4
           ? "lg:text-xxl text-xl "
           : priority == 5

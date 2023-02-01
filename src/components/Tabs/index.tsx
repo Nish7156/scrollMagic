@@ -49,6 +49,7 @@ const Tabs = () => {
   };
 
   return (
+    <div className="container">
       <div className="flex">
         <div className="tab-content">
           {tabs.map((tab, i) => (
@@ -85,6 +86,7 @@ const Tabs = () => {
           })}
         </div>
       </div>
+    </div>
   );
 };
 
